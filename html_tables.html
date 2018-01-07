@@ -5,31 +5,37 @@
 
 	<head> Table
 		<style>
-			table,th,td {
-					border:1px solid black;
-					border-collapse:collapse;
-				    }
-			th,td {
-				padding:15px;
-			      }
-			th {
-				text-align:left;
-			   }
-			table {border-spacing: 5px;
-			      }
-			table#t04{ width:70%;
+			table,th,td{border:1px solid black;
+		                    border-collapse:collapse;
+				   }
+			th,td      {padding:15px;
+			           }
+			th         {text-align:left;
+			           }
+			table      {border-spacing: 5px;
+			           }
+			table#t01   tr:nth-child(even)
+				   {color:green;
+				    background-color:#eee;}
+			table#t01   tr:nth-child(odd) 
+				   {background-color:#fff;}
+			table#t01  th
+				    {color:white;
+				     background-color:black;}
+				      
+			table#t04  { width:70%;
 				   background-color:#f1f1c1;
 				   color:blue;
 				   font-family:verdana;
 				   font-size:80%;
-				 }
+				   }
 				   
 		</style>
 	</head>
 
 	<body>
 		<h1>Table1</h1>
-			<table style="width:100%">
+			<table id="t01"; style="width:100%">
 				<tr>
 					<th>Firstname</th>
 					<th>Surname</th>
